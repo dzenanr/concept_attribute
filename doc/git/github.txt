@@ -1,0 +1,70 @@
+github.txt for concept_attribute 
+
+GitHub, Git
+
+https://github.com/
+http://www.codeschool.com/courses/try-git
+http://git-scm.com/videos
+http://marklodato.github.com/visual-git-guide/index-en.html
+
+Education
+
+https://github.com/edu
+
+Create an account at GitHub.
+
+Read:
+
+http://help.github.com/win-set-up-git/
+http://www.ralfebert.de/blog/tools/git_screencast/
+http://scottr.org/presentations/git-in-5-minutes/
+
+-------------------------------------------------------------------------------
+
+After creating an account, create a remote repository.
+
+http://help.github.com/create-a-repo/
+
+Create a New Repo at GitHub 
+(without README, since cloning will not be used).
+Repository Name: concept_attribute
+Description: 
+  Concept.Attribute is a Dartling project to create data for generated tests.
+      
+Next steps:
+  cd git/dart/concept_attribute
+  git init
+  git status
+  git add .
+  git commit -m 'initial model version'
+  git remote add origin https://github.com/dzenanr/concept_attribute.git
+  git push -u origin master     
+
+-------------------------------------------------------------------------------
+
+Work with a local repository
+
+cd git/dart/game/game_memory
+
+git status
+
+git add .
+
+git status
+
+git commit -m 'short description'
+
+git status
+
+git rm file
+
+git status
+
+git push
+or
+git push origin master
+
+git status
+
+-------------------------------------------------------------------------------
+
