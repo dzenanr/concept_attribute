@@ -17,17 +17,34 @@ var conceptAttributeModelJson = @'''
    "height":580,
    "boxes":[
       {
-         "entry":true,
          "name":"City",
          "x":201,
-         "y":277,
-         "width":80,
          "height":80,
+         "y":277,
+         "entry":true,
+         "width":80,
          "items":[
             {
                "sequence":10,
-               "category":"identifier",
                "name":"name",
+               "category":"identifier",
+               "type":"String",
+               "init":""
+            }
+         ]
+      },
+      {
+         "name":"FirstName",
+         "x":417,
+         "height":80,
+         "y":449,
+         "entry":true,
+         "width":80,
+         "items":[
+            {
+               "sequence":10,
+               "name":"firstname",
+               "category":"attribute",
                "type":"String",
                "init":""
             }

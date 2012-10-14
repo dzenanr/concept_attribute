@@ -1,4 +1,5 @@
-
+// lib/concept_attribute.dart 
+ 
 /*
 http://opensource.org/licenses/
 
@@ -30,19 +31,28 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-
-#library('concept_attribute');
-
-#import("package:dartling/dartling.dart");
-
-#source("concept/attribute/json/data.dart");
-#source("concept/attribute/json/model.dart");
-
-#source("concept/attribute/init.dart");
-#source("concept/attribute/cities.dart");
-
-#source("gen/concept/attribute/entries.dart");
-#source("gen/concept/attribute/cities.dart");
-#source("gen/concept/models.dart");
-#source("gen/concept/repository.dart");
-
+ 
+ 
+#library('concept_attribute'); 
+ 
+#import("dart:json"); 
+#import("dart:math"); 
+#import("dart:uri"); 
+ 
+#import("package:dartling/dartling.dart"); 
+ 
+#source("concept/attribute/json/data.dart"); 
+#source("concept/attribute/json/model.dart"); 
+ 
+#source("concept/attribute/init.dart"); 
+ 
+#source("concept/attribute/cities.dart"); 
+#source("concept/attribute/first_names.dart"); 
+ 
+#source("gen/concept/attribute/entries.dart"); 
+#source("gen/concept/attribute/cities.dart"); 
+#source("gen/concept/attribute/first_names.dart"); 
+ 
+#source("gen/concept/models.dart"); 
+#source("gen/concept/repository.dart"); 
+ 
