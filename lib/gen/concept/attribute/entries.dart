@@ -45,7 +45,7 @@ class AttributeEntries extends ModelEntries {
   } 
  
   Cities get cities => getEntry("City"); 
-  FirstNames get first_names => getEntry("FirstName"); 
+  FirstNames get firstNames => getEntry("FirstName"); 
  
 } 
  

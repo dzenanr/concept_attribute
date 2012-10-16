@@ -4,8 +4,8 @@ abstract class FirstNameGen extends ConceptEntity<FirstName> {
  
   FirstNameGen(Concept concept) : super.of(concept); 
  
-  String get firstname => getAttribute("firstname"); 
-  set firstname(String a) => setAttribute("firstname", a); 
+  String get firstName => getAttribute("firstName"); 
+  set firstName(String a) => setAttribute("firstName", a); 
   
   FirstName newEntity() => new FirstName(concept); 
   

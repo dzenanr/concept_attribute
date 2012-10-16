@@ -7,7 +7,7 @@
 
 // lib/dartling/skeleton/json/data.dart
 
-var conceptAttributeDataJson = @'''
+var conceptAttributeDataJson = r'''
 {
    "entries":[
       {

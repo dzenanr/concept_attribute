@@ -8,48 +8,48 @@
 
 // lib/dartling/skeleton/json/model.dart
 
-var conceptAttributeModelJson = @'''
+var conceptAttributeModelJson = r'''
 {
-   "width":990,
-   "lines":[
-
-   ],
-   "height":580,
-   "boxes":[
-      {
-         "name":"City",
-         "x":201,
-         "height":80,
-         "y":277,
-         "entry":true,
-         "width":80,
-         "items":[
-            {
-               "sequence":10,
-               "name":"name",
-               "category":"identifier",
-               "type":"String",
-               "init":""
-            }
-         ]
-      },
-      {
-         "name":"FirstName",
-         "x":417,
-         "height":80,
-         "y":449,
-         "entry":true,
-         "width":80,
-         "items":[
-            {
-               "sequence":10,
-               "name":"firstname",
-               "category":"attribute",
-               "type":"String",
-               "init":""
-            }
-         ]
-      }
-   ]
+    "width":990,
+    "lines":[
+        
+    ],
+    "height":580,
+    "boxes":[
+        {
+            "entry":true,
+            "name":"City",
+            "x":49,
+            "y":94,
+            "width":80,
+            "height":80,
+            "items":[
+                {
+                    "sequence":10,
+                    "category":"identifier",
+                    "name":"name",
+                    "type":"String",
+                    "init":""
+                }
+            ]
+        },
+        {
+            "entry":true,
+            "name":"FirstName",
+            "x":190,
+            "y":95,
+            "width":80,
+            "height":80,
+            "items":[
+                {
+                    "sequence":10,
+                    "category":"identifier",
+                    "name":"firstName",
+                    "type":"String",
+                    "init":""
+                }
+            ]
+        }
+    ]
 }
 ''';

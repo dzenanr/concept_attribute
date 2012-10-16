@@ -6,7 +6,7 @@ initConceptAttribute(var entries) {
 } 
  
 _initCities(var entries) { 
-
+  
   Cities cities = entries.cities;
   Concept cityConcept = cities.concept;
   
@@ -21,33 +21,29 @@ _initCities(var entries) {
   City montrealCity = new City(cityConcept);
   montrealCity.name = 'Montréal';
   cities.add(montrealCity);
-
-
- 
+  
 } 
  
-_initFirstNames(var entries) { 
+_initFirstNames(var entries) {
   
-  FirstNames firstnames = entries.first_names;
-  Concept firstnameConcept = firstnames.concept;
+  FirstNames firstNames = entries.firstNames;
+  Concept firstNameConcept = firstNames.concept;
   
+  FirstName davidFirstName = new FirstName(firstNameConcept);
+  davidFirstName.firstName = 'David';
+  firstNames.add(davidFirstName);
   
-  FirstName david_firstName = new FirstName(firstnameConcept);
-  david_firstName.firstname = 'David';
-  firstnames.add(david_firstName);
+  FirstName dzenanFirstName = new FirstName(firstNameConcept);
+  dzenanFirstName.firstName = 'Dzenan';
+  firstNames.add(dzenanFirstName);
   
-  FirstName Dzenan_firstName = new FirstName(firstnameConcept);
-  Dzenan_firstName.firstname = 'Dzenan';
-  firstnames.add(Dzenan_firstName);
+  FirstName rafikFirstName = new FirstName(firstNameConcept);
+  rafikFirstName.firstName = 'Rafik';
+  firstNames.add(rafikFirstName);
   
-  FirstName Rafik_firstName = new FirstName(firstnameConcept);
-  Rafik_firstName.firstname = 'Rafik';
-  firstnames.add(Rafik_firstName);
+  FirstName timurFirstName = new FirstName(firstNameConcept);
+  timurFirstName.firstName = 'Timur';
+  firstNames.add(timurFirstName);
   
-  FirstName Timur_firstName = new FirstName(firstnameConcept);
-  Timur_firstName.firstname = 'Timur';
-  firstnames.add(Timur_firstName);
-  
-
 } 
  
