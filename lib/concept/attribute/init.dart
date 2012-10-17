@@ -1,8 +1,10 @@
 // lib/concept/attribute/init.dart 
  
 initConceptAttribute(var entries) { 
-  _initCities(entries); 
+  _initCities(entries);
+  _initLastNames(entries); 
   _initFirstNames(entries); 
+ 
 } 
  
 _initCities(var entries) { 
@@ -26,7 +28,7 @@ _initCities(var entries) {
  
 _initFirstNames(var entries) {
   
-  FirstNames firstNames = entries.firstNames;
+  FirstNames firstNames = entries.first_names;
   Concept firstNameConcept = firstNames.concept;
   
   FirstName davidFirstName = new FirstName(firstNameConcept);
@@ -46,4 +48,26 @@ _initFirstNames(var entries) {
   firstNames.add(timurFirstName);
   
 } 
+_initLastNames(var entries) { 
+  LastNames lastNames = entries.last_names;
+  Concept lastNameConcept = lastNames.concept;
+  
+  LastName davidLastName = new LastName(lastNameConcept);
+  davidLastName.lastName = 'Curtis';
+  lastNames.add(davidLastName);
+  
+  LastName rafikLastName = new LastName(lastNameConcept);
+  rafikLastName.lastName = 'Benmoussa';
+  lastNames.add(rafikLastName);
+  
+  LastName dzenanLastName = new LastName(lastNameConcept);
+  dzenanLastName.lastName = 'Ridjanovic';
+  lastNames.add(dzenanLastName);
+  
+  LastName oumouLastName = new LastName(lastNameConcept);
+  oumouLastName.lastName = 'Kaba';
+  lastNames.add(oumouLastName);
+} 
+ 
+
  

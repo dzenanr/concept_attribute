@@ -37,7 +37,7 @@ initConceptData(ConceptRepo conceptRepo) {
 } 
  
 void main() { 
-  genCode(); 
+  //genCode(); 
  
   var conceptRepo = new ConceptRepo(); 
   initConceptData(conceptRepo); 

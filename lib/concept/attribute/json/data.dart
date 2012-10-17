@@ -7,24 +7,24 @@
 
 // lib/dartling/skeleton/json/data.dart
 
-var conceptAttributeDataJson = r'''
+var conceptAttributeDataJson = @'''
 {
    "entries":[
       {
          "concept":"City",
          "entities":[
             {
-               "oid":"1350258321379",
+               "oid":"1350438430101",
                "name":"Toronto",
                "code":null
             },
             {
-               "oid":"1350258321384",
+               "oid":"1350438430106",
                "name":"Québec",
                "code":null
             },
             {
-               "oid":"1350258321385",
+               "oid":"1350438430108",
                "name":"Montréal",
                "code":null
             }
@@ -34,23 +34,48 @@ var conceptAttributeDataJson = r'''
          "concept":"FirstName",
          "entities":[
             {
-               "firstname":"David",
-               "oid":"1350258321387",
+               "oid":"1350438430116",
+               "firstName":"David",
                "code":null
             },
             {
-               "firstname":"Dzenan",
-               "oid":"1350258321389",
+               "oid":"1350438430118",
+               "firstName":"Dzenan",
                "code":null
             },
             {
-               "firstname":"Rafik",
-               "oid":"1350258321390",
+               "oid":"1350438430119",
+               "firstName":"Rafik",
                "code":null
             },
             {
-               "firstname":"Timur",
-               "oid":"1350258321391",
+               "oid":"1350438430121",
+               "firstName":"Timur",
+               "code":null
+            }
+         ]
+      },
+      {
+         "concept":"LastName",
+         "entities":[
+            {
+               "lastName":"Curtis",
+               "oid":"1350438430110",
+               "code":null
+            },
+            {
+               "lastName":"Benmoussa",
+               "oid":"1350438430111",
+               "code":null
+            },
+            {
+               "lastName":"Ridjanovic",
+               "oid":"1350438430113",
+               "code":null
+            },
+            {
+               "lastName":"Kaba",
+               "oid":"1350438430114",
                "code":null
             }
          ]
