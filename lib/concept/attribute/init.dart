@@ -4,6 +4,7 @@ initConceptAttribute(var entries) {
   _initCities(entries);
   _initLastNames(entries); 
   _initFirstNames(entries); 
+  _initEmails(entries); 
  
 } 
  
@@ -68,6 +69,29 @@ _initLastNames(var entries) {
   oumouLastName.lastName = 'Kaba';
   lastNames.add(oumouLastName);
 } 
+
+_initEmails(var entries) { 
+  Emails emails = entries.emails;
+  Concept emailConcept = emails.concept;
+  
+  Email davidEmail = new Email(emailConcept);
+  davidEmail.emailaddress = 'david.curtis@hotmail.ca';
+  emails.add(davidEmail);
+  
+  Email rafikEmail = new Email(emailConcept);
+  rafikEmail.emailaddress = 'rafik.benmoussa@hotmail.ca';
+  emails.add(rafikEmail);
+  
+  Email timurEmail = new Email(emailConcept);
+  timurEmail.emailaddress = 'timur.ridjanovic@gmail.ca';
+  emails.add(timurEmail);
+  
+  Email dzenanEmail = new Email(emailConcept);
+  dzenanEmail.emailaddress = 'dzenan.ridjanovic@gmail.ca';
+  emails.add(dzenanEmail);
+  
+} 
+
  
 
  

@@ -13,6 +13,8 @@ class AttributeEntries extends ModelEntries {
     entries["FirstName"] = new FirstNames(concept); 
     concept = model.concepts.findByCode("LastName"); 
     entries["LastName"] = new LastNames(concept); 
+    concept = model.concepts.findByCode("Email"); 
+    entries["Email"] = new Emails(concept); 
     return entries; 
   } 
  
@@ -30,6 +32,9 @@ class AttributeEntries extends ModelEntries {
     if (concept.code == "LastName") { 
       return new LastNames(concept); 
     } 
+    if (concept.code == "Email") { 
+      return new Emails(concept); 
+    } 
   } 
  
   ConceptEntity newEntity(String conceptCode) { 
@@ -46,6 +51,9 @@ class AttributeEntries extends ModelEntries {
     if (concept.code == "LastName") { 
       return new LastName(concept); 
     } 
+    if (concept.code == "Email") { 
+      return new Email(concept); 
+    } 
   } 
  
   fromJsonToData() { 
@@ -55,7 +63,7 @@ class AttributeEntries extends ModelEntries {
   Cities get cities => getEntry("City"); 
   FirstNames get first_names => getEntry("FirstName"); 
   LastNames get last_names => getEntry("LastName"); 
+  Emails get emails => getEntry("Email"); 
  
 } 
  
-

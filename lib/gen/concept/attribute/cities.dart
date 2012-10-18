@@ -27,4 +27,3 @@ abstract class CitiesGen extends Entities<City> {
   
 } 
  
-

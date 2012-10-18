@@ -14,17 +14,17 @@ var conceptAttributeDataJson = @'''
          "concept":"City",
          "entities":[
             {
-               "oid":"1350438430101",
+               "oid":"1350580563263",
                "name":"Toronto",
                "code":null
             },
             {
-               "oid":"1350438430106",
+               "oid":"1350580563267",
                "name":"Québec",
                "code":null
             },
             {
-               "oid":"1350438430108",
+               "oid":"1350580563268",
                "name":"Montréal",
                "code":null
             }
@@ -34,22 +34,22 @@ var conceptAttributeDataJson = @'''
          "concept":"FirstName",
          "entities":[
             {
-               "oid":"1350438430116",
+               "oid":"1350580563278",
                "firstName":"David",
                "code":null
             },
             {
-               "oid":"1350438430118",
+               "oid":"1350580563279",
                "firstName":"Dzenan",
                "code":null
             },
             {
-               "oid":"1350438430119",
+               "oid":"1350580563281",
                "firstName":"Rafik",
                "code":null
             },
             {
-               "oid":"1350438430121",
+               "oid":"1350580563282",
                "firstName":"Timur",
                "code":null
             }
@@ -60,22 +60,47 @@ var conceptAttributeDataJson = @'''
          "entities":[
             {
                "lastName":"Curtis",
-               "oid":"1350438430110",
+               "oid":"1350580563271",
                "code":null
             },
             {
                "lastName":"Benmoussa",
-               "oid":"1350438430111",
+               "oid":"1350580563272",
                "code":null
             },
             {
                "lastName":"Ridjanovic",
-               "oid":"1350438430113",
+               "oid":"1350580563274",
                "code":null
             },
             {
                "lastName":"Kaba",
-               "oid":"1350438430114",
+               "oid":"1350580563275",
+               "code":null
+            }
+         ]
+      },
+      {
+         "concept":"Email",
+         "entities":[
+            {
+               "emailaddress":"david.curtis@hotmail.ca",
+               "oid":"1350580563284",
+               "code":null
+            },
+            {
+               "emailaddress":"rafik.benmoussa@hotmail.ca",
+               "oid":"1350580563286",
+               "code":null
+            },
+            {
+               "emailaddress":"timur.ridjanovic@gmail.ca",
+               "oid":"1350580563287",
+               "code":null
+            },
+            {
+               "emailaddress":"dzenan.ridjanovic@gmail.ca",
+               "oid":"1350580563289",
                "code":null
             }
          ]

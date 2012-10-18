@@ -66,6 +66,23 @@ var conceptAttributeModelJson = r'''
                "init":""
             }
          ]
+      },
+      {
+         "name":"Email",
+         "x":48,
+         "height":80,
+         "y":192,
+         "entry":true,
+         "width":80,
+         "items":[
+            {
+               "sequence":10,
+               "name":"emailaddress",
+               "category":"identifier",
+               "type":"Email",
+               "init":""
+            }
+         ]
       }
    ]
 }
