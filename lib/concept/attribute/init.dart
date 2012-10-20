@@ -5,6 +5,7 @@ initConceptAttribute(var entries) {
   _initLastNames(entries); 
   _initFirstNames(entries); 
   _initEmails(entries); 
+  _initAbouts(entries); 
  
 } 
  
@@ -91,7 +92,15 @@ _initEmails(var entries) {
   emails.add(dzenanEmail);
   
 } 
-
+_initAbouts(var entries) { 
+  Abouts abouts = entries.abouts;
+  Concept aboutConcept = abouts.concept;
+  
+  About davidAbout = new About(aboutConcept);
+  davidAbout.about = "Student at UQTR , I love Basket ball! ";
+  abouts.add(davidAbout);
+} 
+ 
  
 
  

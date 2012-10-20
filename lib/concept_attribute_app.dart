@@ -33,7 +33,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
  
  
-#library('concept_attribute_app') ;
+#library('concept_attribute_app'); 
  
 #import("dart:html"); 
 #import("dart:math"); 
@@ -43,4 +43,3 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  
 #import("package:concept_attribute/concept_attribute.dart"); 
  
-
