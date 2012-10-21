@@ -1,19 +1,19 @@
-// lib/concept/attribute/init.dart 
- 
-initConceptAttribute(var entries) { 
+// lib/concept/attribute/init.dart
+
+initConceptAttribute(var entries) {
   _initCities(entries);
-  _initLastNames(entries); 
-  _initFirstNames(entries); 
-  _initEmails(entries); 
-  _initAbouts(entries); 
- 
-} 
- 
-_initCities(var entries) { 
-  
+  _initLastNames(entries);
+  _initFirstNames(entries);
+  _initEmails(entries);
+  _initAbouts(entries);
+
+}
+
+_initCities(var entries) {
+
   Cities cities = entries.cities;
   Concept cityConcept = cities.concept;
-  
+
   City torontoCity = new City(cityConcept);
   torontoCity.name = 'Toronto';
   cities.add(torontoCity);
@@ -25,82 +25,82 @@ _initCities(var entries) {
   City montrealCity = new City(cityConcept);
   montrealCity.name = 'Montréal';
   cities.add(montrealCity);
-  
-} 
- 
+
+}
+
 _initFirstNames(var entries) {
-  
-  FirstNames firstNames = entries.first_names;
+
+  FirstNames firstNames = entries.firstNames;
   Concept firstNameConcept = firstNames.concept;
-  
+
   FirstName davidFirstName = new FirstName(firstNameConcept);
   davidFirstName.firstName = 'David';
   firstNames.add(davidFirstName);
-  
+
   FirstName dzenanFirstName = new FirstName(firstNameConcept);
   dzenanFirstName.firstName = 'Dzenan';
   firstNames.add(dzenanFirstName);
-  
+
   FirstName rafikFirstName = new FirstName(firstNameConcept);
   rafikFirstName.firstName = 'Rafik';
   firstNames.add(rafikFirstName);
-  
+
   FirstName timurFirstName = new FirstName(firstNameConcept);
   timurFirstName.firstName = 'Timur';
   firstNames.add(timurFirstName);
-  
-} 
-_initLastNames(var entries) { 
-  LastNames lastNames = entries.last_names;
+
+}
+_initLastNames(var entries) {
+  LastNames lastNames = entries.lastNames;
   Concept lastNameConcept = lastNames.concept;
-  
+
   LastName davidLastName = new LastName(lastNameConcept);
   davidLastName.lastName = 'Curtis';
   lastNames.add(davidLastName);
-  
+
   LastName rafikLastName = new LastName(lastNameConcept);
   rafikLastName.lastName = 'Benmoussa';
   lastNames.add(rafikLastName);
-  
+
   LastName dzenanLastName = new LastName(lastNameConcept);
   dzenanLastName.lastName = 'Ridjanovic';
   lastNames.add(dzenanLastName);
-  
+
   LastName oumouLastName = new LastName(lastNameConcept);
   oumouLastName.lastName = 'Kaba';
   lastNames.add(oumouLastName);
-} 
+}
 
-_initEmails(var entries) { 
+_initEmails(var entries) {
   Emails emails = entries.emails;
   Concept emailConcept = emails.concept;
-  
+
   Email davidEmail = new Email(emailConcept);
-  davidEmail.emailaddress = 'david.curtis@hotmail.ca';
+  davidEmail.email = 'david.curtis@hotmail.ca';
   emails.add(davidEmail);
-  
+
   Email rafikEmail = new Email(emailConcept);
-  rafikEmail.emailaddress = 'rafik.benmoussa@hotmail.ca';
+  rafikEmail.email = 'rafik.benmoussa@hotmail.ca';
   emails.add(rafikEmail);
-  
+
   Email timurEmail = new Email(emailConcept);
-  timurEmail.emailaddress = 'timur.ridjanovic@gmail.ca';
+  timurEmail.email = 'timur.ridjanovic@gmail.ca';
   emails.add(timurEmail);
-  
+
   Email dzenanEmail = new Email(emailConcept);
-  dzenanEmail.emailaddress = 'dzenan.ridjanovic@gmail.ca';
+  dzenanEmail.email = 'dzenan.ridjanovic@gmail.ca';
   emails.add(dzenanEmail);
-  
-} 
-_initAbouts(var entries) { 
+
+}
+_initAbouts(var entries) {
   Abouts abouts = entries.abouts;
   Concept aboutConcept = abouts.concept;
-  
+
   About davidAbout = new About(aboutConcept);
   davidAbout.about = "Student at UQTR , I love Basket ball! ";
   abouts.add(davidAbout);
-} 
- 
- 
+}
 
- 
+
+
+
