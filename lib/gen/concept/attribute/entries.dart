@@ -1,3 +1,5 @@
+part of concept_attribute;
+
 // lib/gen/concept/attribute/entries.dart
 
 class AttributeEntries extends ModelEntries {

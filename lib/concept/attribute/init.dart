@@ -1,3 +1,5 @@
+part of concept_attribute;
+
 // lib/concept/attribute/init.dart
 
 initConceptAttribute(var entries) {

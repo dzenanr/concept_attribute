@@ -1,3 +1,5 @@
+part of concept_attribute;
+
 // lib/concept/attribute/emails.dart
 
 class Email extends EmailGen {

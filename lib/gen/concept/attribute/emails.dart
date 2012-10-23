@@ -1,3 +1,5 @@
+part of concept_attribute;
+
 // lib/gen/concept/attribute/emails.dart
 
 abstract class EmailGen extends ConceptEntity<Email> {

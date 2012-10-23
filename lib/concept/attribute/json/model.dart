@@ -1,3 +1,4 @@
+part of concept_attribute;
 
 // http://www.json.org/
 // http://jsonformatter.curiousconcept.com/
