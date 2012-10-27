@@ -15,17 +15,17 @@ var conceptAttributeDataJson = r'''
          "concept":"City",
          "entities":[
             {
-               "oid":"1350767738773",
+               "oid":"1351185852457",
                "name":"Toronto",
                "code":null
             },
             {
-               "oid":"1350767738778",
+               "oid":"1351185852462",
                "name":"Québec",
                "code":null
             },
             {
-               "oid":"1350767738779",
+               "oid":"1351185852463",
                "name":"Montréal",
                "code":null
             }
@@ -35,22 +35,22 @@ var conceptAttributeDataJson = r'''
          "concept":"FirstName",
          "entities":[
             {
-               "oid":"1350767738789",
+               "oid":"1351185852472",
                "firstName":"David",
                "code":null
             },
             {
-               "oid":"1350767738791",
+               "oid":"1351185852473",
                "firstName":"Dzenan",
                "code":null
             },
             {
-               "oid":"1350767738793",
+               "oid":"1351185852475",
                "firstName":"Rafik",
                "code":null
             },
             {
-               "oid":"1350767738794",
+               "oid":"1351185852476",
                "firstName":"Timur",
                "code":null
             }
@@ -61,22 +61,22 @@ var conceptAttributeDataJson = r'''
          "entities":[
             {
                "lastName":"Curtis",
-               "oid":"1350767738782",
+               "oid":"1351185852465",
                "code":null
             },
             {
                "lastName":"Benmoussa",
-               "oid":"1350767738784",
+               "oid":"1351185852467",
                "code":null
             },
             {
                "lastName":"Ridjanovic",
-               "oid":"1350767738785",
+               "oid":"1351185852468",
                "code":null
             },
             {
                "lastName":"Kaba",
-               "oid":"1350767738787",
+               "oid":"1351185852470",
                "code":null
             }
          ]
@@ -85,23 +85,23 @@ var conceptAttributeDataJson = r'''
          "concept":"Email",
          "entities":[
             {
-               "emailaddress":"david.curtis@hotmail.ca",
-               "oid":"1350767738797",
+               "email":"david.curtis@hotmail.ca",
+               "oid":"1351185852478",
                "code":null
             },
             {
-               "emailaddress":"rafik.benmoussa@hotmail.ca",
-               "oid":"1350767738799",
+               "email":"rafik.benmoussa@hotmail.ca",
+               "oid":"1351185852479",
                "code":null
             },
             {
-               "emailaddress":"timur.ridjanovic@gmail.ca",
-               "oid":"1350767738800",
+               "email":"timur.ridjanovic@gmail.ca",
+               "oid":"1351185852481",
                "code":null
             },
             {
-               "emailaddress":"dzenan.ridjanovic@gmail.ca",
-               "oid":"1350767738802",
+               "email":"dzenan.ridjanovic@gmail.ca",
+               "oid":"1351185852482",
                "code":null
             }
          ]
@@ -110,7 +110,7 @@ var conceptAttributeDataJson = r'''
          "concept":"About",
          "entities":[
             {
-               "oid":"1350767738813",
+               "oid":"1351185852484",
                "about":"Student at UQTR , I love Basket ball! ",
                "code":null
             }
