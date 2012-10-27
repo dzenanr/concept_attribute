@@ -8,6 +8,8 @@ initConceptAttribute(var entries) {
   _initFirstNames(entries);
   _initEmails(entries);
   _initAbouts(entries);
+  _initCategories(entries); 
+  _initDescriptions(entries); 
 
 }
 
@@ -102,6 +104,30 @@ _initAbouts(var entries) {
   davidAbout.about = "Student at UQTR , I love Basket ball! ";
   abouts.add(davidAbout);
 }
+
+_initCategories(var entries) { 
+  Categories categories = entries.categories;
+  Concept categoryConcept = categories.concept;
+
+  Category politicCategory = new Category(categoryConcept);
+  politicCategory.category = "Politic";
+  categories.add(politicCategory);
+  
+  Category EconomyCategory = new Category(categoryConcept);
+  EconomyCategory.category = "Economy";
+  categories.add(EconomyCategory);
+  
+  Category HistoryCategory = new Category(categoryConcept);
+  HistoryCategory.category = "History";
+  categories.add(HistoryCategory);
+} 
+ 
+_initDescriptions(var entries) { 
+  //Descriptions descriptions = entries.escriptions;
+  //Concept descriptionConcept = descriptions.concept;
+} 
+ 
+
 
 
 

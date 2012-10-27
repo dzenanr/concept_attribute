@@ -1,3 +1,5 @@
+part of concept_attribute; 
+ 
 // lib/gen/concept/attribute/entries.dart 
  
 class AttributeEntries extends ModelEntries { 
@@ -17,6 +19,10 @@ class AttributeEntries extends ModelEntries {
     entries["Email"] = new Emails(concept); 
     concept = model.concepts.findByCode("About"); 
     entries["About"] = new Abouts(concept); 
+    concept = model.concepts.findByCode("Category"); 
+    entries["Category"] = new Categories(concept); 
+    concept = model.concepts.findByCode("Description"); 
+    entries["Description"] = new Descriptions(concept); 
     return entries; 
   } 
  
@@ -40,6 +46,12 @@ class AttributeEntries extends ModelEntries {
     if (concept.code == "About") { 
       return new Abouts(concept); 
     } 
+    if (concept.code == "Category") { 
+      return new Categories(concept); 
+    } 
+    if (concept.code == "Description") { 
+      return new Descriptions(concept); 
+    } 
   } 
  
   ConceptEntity newEntity(String conceptCode) { 
@@ -62,6 +74,12 @@ class AttributeEntries extends ModelEntries {
     if (concept.code == "About") { 
       return new About(concept); 
     } 
+    if (concept.code == "Category") { 
+      return new Category(concept); 
+    } 
+    if (concept.code == "Description") { 
+      return new Description(concept); 
+    } 
   } 
  
   fromJsonToData() { 
@@ -73,6 +91,8 @@ class AttributeEntries extends ModelEntries {
   LastNames get lastNames => getEntry("LastName"); 
   Emails get emails => getEntry("Email"); 
   Abouts get abouts => getEntry("About"); 
+  Categories get categories => getEntry("Category"); 
+  Descriptions get descriptions => getEntry("Description"); 
  
 } 
  
