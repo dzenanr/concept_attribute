@@ -1,8 +1,9 @@
 name: concept_attribute
 author: Dzenan Ridjanovic <dzenanr@gmail.com>
 homepage: http://ondart.me/
-version: 0.0.1
+version: 0.0.9
 description: >
+  A model with one attribute concepts for test data generation.
   Dartling is a domain model framework for web application prototypes.
   A new dartling project is copied and adapted from dartling_skeleton.
 dependencies:

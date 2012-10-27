@@ -22,7 +22,7 @@ genCode() {
 
   repo.domains.add(conceptDomain);
 
-  repo.gen();
+  repo.gen("concept_attribute");
 }
 
 initConceptData(ConceptRepo conceptRepo) {
