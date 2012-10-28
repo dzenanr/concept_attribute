@@ -123,7 +123,7 @@ _initCategories(var entries) {
 } 
  
 _initDescriptions(var entries) { 
-  //Descriptions descriptions = entries.escriptions;
+  //Descriptions descriptions = entries.descriptions;
   //Concept descriptionConcept = descriptions.concept;
 } 
  
