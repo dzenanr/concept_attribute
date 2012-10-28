@@ -135,6 +135,23 @@ var conceptAttributeModelJson = r'''
                "init":""
             }
          ]
+      },
+      {
+         "name":"Text",
+         "x":190,
+         "height":80,
+         "y":291,
+         "entry":true,
+         "width":80,
+         "items":[
+            {
+               "sequence":10,
+               "name":"text",
+               "category":"identifier",
+               "type":"String",
+               "init":""
+            }
+         ]
       }
    ]
 }

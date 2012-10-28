@@ -15,17 +15,17 @@ var conceptAttributeDataJson = r'''
          "concept":"City",
          "entities":[
             {
-               "oid":"1351367861734",
+               "oid":"1351429292842",
                "name":"Toronto",
                "code":null
             },
             {
-               "oid":"1351367861738",
+               "oid":"1351429292846",
                "name":"Québec",
                "code":null
             },
             {
-               "oid":"1351367861739",
+               "oid":"1351429292848",
                "name":"Montréal",
                "code":null
             }
@@ -35,22 +35,22 @@ var conceptAttributeDataJson = r'''
          "concept":"FirstName",
          "entities":[
             {
-               "oid":"1351367861748",
+               "oid":"1351429292856",
                "firstName":"David",
                "code":null
             },
             {
-               "oid":"1351367861749",
+               "oid":"1351429292858",
                "firstName":"Dzenan",
                "code":null
             },
             {
-               "oid":"1351367861751",
+               "oid":"1351429292859",
                "firstName":"Rafik",
                "code":null
             },
             {
-               "oid":"1351367861752",
+               "oid":"1351429292861",
                "firstName":"Timur",
                "code":null
             }
@@ -61,22 +61,22 @@ var conceptAttributeDataJson = r'''
          "entities":[
             {
                "lastName":"Curtis",
-               "oid":"1351367861741",
+               "oid":"1351429292850",
                "code":null
             },
             {
                "lastName":"Benmoussa",
-               "oid":"1351367861743",
+               "oid":"1351429292851",
                "code":null
             },
             {
                "lastName":"Ridjanovic",
-               "oid":"1351367861744",
+               "oid":"1351429292853",
                "code":null
             },
             {
                "lastName":"Kaba",
-               "oid":"1351367861746",
+               "oid":"1351429292854",
                "code":null
             }
          ]
@@ -86,22 +86,22 @@ var conceptAttributeDataJson = r'''
          "entities":[
             {
                "email":"david.curtis@hotmail.ca",
-               "oid":"1351367861754",
+               "oid":"1351429292863",
                "code":null
             },
             {
                "email":"rafik.benmoussa@hotmail.ca",
-               "oid":"1351367861756",
+               "oid":"1351429292864",
                "code":null
             },
             {
                "email":"timur.ridjanovic@gmail.ca",
-               "oid":"1351367861757",
+               "oid":"1351429292866",
                "code":null
             },
             {
                "email":"dzenan.ridjanovic@gmail.ca",
-               "oid":"1351367861758",
+               "oid":"1351429292867",
                "code":null
             }
          ]
@@ -110,7 +110,7 @@ var conceptAttributeDataJson = r'''
          "concept":"About",
          "entities":[
             {
-               "oid":"1351367861760",
+               "oid":"1351429292869",
                "about":"Student at UQTR , I love Basket ball! ",
                "code":null
             }
@@ -120,17 +120,17 @@ var conceptAttributeDataJson = r'''
          "concept":"Category",
          "entities":[
             {
-               "oid":"1351367861762",
+               "oid":"1351429292872",
                "category":"Politic",
                "code":null
             },
             {
-               "oid":"1351367861764",
+               "oid":"1351429292874",
                "category":"Economy",
                "code":null
             },
             {
-               "oid":"1351367861765",
+               "oid":"1351429292875",
                "category":"History",
                "code":null
             }
@@ -140,6 +140,16 @@ var conceptAttributeDataJson = r'''
          "concept":"Description",
          "entities":[
 
+         ]
+      },
+      {
+         "concept":"Text",
+         "entities":[
+            {
+               "text":"My first text.",
+               "oid":"1351429292877",
+               "code":null
+            }
          ]
       }
    ],

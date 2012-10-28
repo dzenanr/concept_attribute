@@ -9,7 +9,8 @@ initConceptAttribute(var entries) {
   _initEmails(entries);
   _initAbouts(entries);
   _initCategories(entries); 
-  _initDescriptions(entries); 
+  _initDescriptions(entries);
+  _initTexts(entries);
 
 }
 
@@ -126,6 +127,16 @@ _initDescriptions(var entries) {
   //Descriptions descriptions = entries.descriptions;
   //Concept descriptionConcept = descriptions.concept;
 } 
+
+_initTexts(var entries) { 
+  Texts texts = entries.texts;
+  Concept textConcept = texts.concept;
+  
+  Text firstText = new Text(textConcept);
+  firstText.text = "My first text.";
+  texts.add(firstText);
+} 
+
  
 
 

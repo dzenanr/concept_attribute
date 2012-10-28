@@ -53,6 +53,7 @@ part "concept/attribute/emails.dart";
 part "concept/attribute/abouts.dart"; 
 part "concept/attribute/categories.dart"; 
 part "concept/attribute/descriptions.dart"; 
+part "concept/attribute/texts.dart"; 
  
 part "gen/concept/attribute/entries.dart"; 
 part "gen/concept/attribute/cities.dart"; 
@@ -62,8 +63,8 @@ part "gen/concept/attribute/emails.dart";
 part "gen/concept/attribute/abouts.dart"; 
 part "gen/concept/attribute/categories.dart"; 
 part "gen/concept/attribute/descriptions.dart"; 
+part "gen/concept/attribute/texts.dart"; 
  
 part "gen/concept/models.dart"; 
 part "gen/concept/repository.dart"; 
  
-
