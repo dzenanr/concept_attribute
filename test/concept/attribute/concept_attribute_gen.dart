@@ -32,12 +32,12 @@ initConceptData(ConceptRepo conceptRepo) {
    var conceptAttributeEntries =
        conceptModels.getModelEntries(ConceptRepo.conceptAttributeModelCode);
    initConceptAttribute(conceptAttributeEntries);
-   conceptAttributeEntries.display();
-   conceptAttributeEntries.displayJson();
+   //conceptAttributeEntries.display();
+   //conceptAttributeEntries.displayJson();
 }
 
 void main() {
-  genCode();
+  //genCode();
 
   var conceptRepo = new ConceptRepo();
   initConceptData(conceptRepo);

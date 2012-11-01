@@ -11,7 +11,8 @@ initConceptAttribute(var entries) {
   _initCategories(entries); 
   _initDescriptions(entries);
   _initTexts(entries);
-
+  
+  _initFromPeople(entries);
 }
 
 _initCities(var entries) {
@@ -53,8 +54,8 @@ _initFirstNames(var entries) {
   FirstName timurFirstName = new FirstName(firstNameConcept);
   timurFirstName.firstName = 'Timur';
   firstNames.add(timurFirstName);
-
 }
+
 _initLastNames(var entries) {
   LastNames lastNames = entries.lastNames;
   Concept lastNameConcept = lastNames.concept;
@@ -97,6 +98,7 @@ _initEmails(var entries) {
   emails.add(dzenanEmail);
 
 }
+
 _initAbouts(var entries) {
   Abouts abouts = entries.abouts;
   Concept aboutConcept = abouts.concept;
@@ -126,7 +128,7 @@ _initCategories(var entries) {
 _initDescriptions(var entries) { 
   //Descriptions descriptions = entries.descriptions;
   //Concept descriptionConcept = descriptions.concept;
-} 
+}
 
 _initTexts(var entries) { 
   Texts texts = entries.texts;
@@ -135,7 +137,42 @@ _initTexts(var entries) {
   Text firstText = new Text(textConcept);
   firstText.text = "My first text.";
   texts.add(firstText);
-} 
+}
+
+List<Map<String, String>> fromJson(String json) {
+  List<Map<String, String>> dataList;
+  if (json != null && json.trim() != '') {
+    dataList = JSON.parse(json);
+  }
+  return dataList;
+}
+
+_initFromPeople(var entries) {
+
+  FirstNames firstNames = entries.firstNames;
+  Concept firstNameConcept = firstNames.concept;
+  
+  LastNames lastNames = entries.lastNames;
+  Concept lastNameConcept = lastNames.concept;
+  
+  for (var person in fromJson(peopleInJson())) {
+    var firstName = person['first_name'];
+    FirstName personFirstName = new FirstName(firstNameConcept);
+    personFirstName.firstName = firstName;
+    firstNames.add(personFirstName);
+    
+    var lastName = person['last_name'];
+    LastName personLastName = new LastName(lastNameConcept);
+    personLastName.lastName = lastName;
+    lastNames.add(personLastName);
+  }
+  
+  print('Number of first names: ${firstNames.count}');
+  //print(firstNames.errors.display('Errors in first names'));
+  
+  print('Number of last names: ${lastNames.count}');
+  //print(lastNames.errors.display('Errors in last names'));
+}
 
  
 
