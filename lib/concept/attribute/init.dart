@@ -148,6 +148,21 @@ List<Map<String, String>> fromJson(String json) {
 }
 
 _initFromPeople(var entries) {
+  
+  Emails emails = entries.emails;
+  Concept emailConcept = emails.concept;
+  
+  for (var email in fromJson(emailsInJson())) {
+    var emailAddress = email['email_address'];
+    Email personEmail = new Email(emailConcept);
+    personEmail.email = emailAddress;
+    emails.add(personEmail);
+  }
+  
+  print('Number of emails: ${emails.count}');
+  //print(emails.errors.display('Errors in emails'));
+  
+  ////////////////////////////////////////////////////////////////
 
   FirstNames firstNames = entries.firstNames;
   Concept firstNameConcept = firstNames.concept;
