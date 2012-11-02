@@ -161,7 +161,9 @@ _initFromPeople(var entries) {
   
   print('Number of emails: ${emails.count}');
   //print(emails.errors.display('Errors in emails'));
+  //////////////////////////////////////////////////////////////////
   
+   
   ////////////////////////////////////////////////////////////////
 
   FirstNames firstNames = entries.firstNames;
@@ -187,6 +189,23 @@ _initFromPeople(var entries) {
   
   print('Number of last names: ${lastNames.count}');
   //print(lastNames.errors.display('Errors in last names'));
+  
+  ////////////////////////////////////////////////////////////////
+  // Cities
+    Cities cities = entries.cities;
+    Concept cityConcept = cities.concept;
+    
+    for (var city in fromJson(citiesInJson())) {
+      var cityName = city['city'];
+      City personCity = new City(cityConcept);
+      personCity.name = cityName;
+      cities.add(personCity);
+      
+    }
+  print('Number of Cities: ${cities.count}');
+    
+
+  
 }
 
  
