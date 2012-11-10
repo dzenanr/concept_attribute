@@ -1,5 +1,5 @@
-// lib/concept_attribute_app.dart 
- 
+// lib/concept_attribute_app.dart
+
 /*
 http://opensource.org/licenses/
 
@@ -31,15 +31,15 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
- 
- 
-library concept_attribute_app; 
- 
-import "dart:html"; 
-import "dart:math"; 
- 
-import "package:dartling/dartling.dart"; 
-import "package:dartling/dartling_app.dart"; 
- 
-import "package:concept_attribute/concept_attribute.dart"; 
- 
+
+
+library concept_attribute_app;
+
+import "dart:html";
+import "dart:math";
+
+import "package:dartling/dartling.dart";
+import "package:dartling/dartling_app.dart";
+
+import "package:concept_attribute/concept_attribute.dart";
+

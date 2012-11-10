@@ -8,10 +8,10 @@ initConceptAttribute(var entries) {
   _initFirstNames(entries);
   _initEmails(entries);
   _initAbouts(entries);
-  _initCategories(entries); 
+  _initCategories(entries);
   _initDescriptions(entries);
   _initTexts(entries);
-  
+
   _initFromPeople(entries);
 }
 
@@ -108,32 +108,32 @@ _initAbouts(var entries) {
   abouts.add(davidAbout);
 }
 
-_initCategories(var entries) { 
+_initCategories(var entries) {
   Categories categories = entries.categories;
   Concept categoryConcept = categories.concept;
 
   Category politicCategory = new Category(categoryConcept);
   politicCategory.category = "Politic";
   categories.add(politicCategory);
-  
+
   Category EconomyCategory = new Category(categoryConcept);
   EconomyCategory.category = "Economy";
   categories.add(EconomyCategory);
-  
+
   Category HistoryCategory = new Category(categoryConcept);
   HistoryCategory.category = "History";
   categories.add(HistoryCategory);
-} 
- 
-_initDescriptions(var entries) { 
+}
+
+_initDescriptions(var entries) {
   //Descriptions descriptions = entries.descriptions;
   //Concept descriptionConcept = descriptions.concept;
 }
 
-_initTexts(var entries) { 
+_initTexts(var entries) {
   Texts texts = entries.texts;
   Concept textConcept = texts.concept;
-  
+
   Text firstText = new Text(textConcept);
   firstText.text = "My first text.";
   texts.add(firstText);
@@ -148,48 +148,48 @@ List<Map<String, String>> fromJson(String json) {
 }
 
 _initFromPeople(var entries) {
-  
+
   Emails emails = entries.emails;
   Concept emailConcept = emails.concept;
-  
+
   for (var email in fromJson(emailsInJson())) {
     var emailAddress = email['email_address'];
     Email personEmail = new Email(emailConcept);
     personEmail.email = emailAddress;
     emails.add(personEmail);
   }
-  
+
   print('Number of emails: ${emails.count}');
   //print(emails.errors.display('Errors in emails'));
-  
+
   ////////////////////////////////////////////////////////////////
 
   FirstNames firstNames = entries.firstNames;
   Concept firstNameConcept = firstNames.concept;
-  
+
   LastNames lastNames = entries.lastNames;
   Concept lastNameConcept = lastNames.concept;
-  
+
   for (var person in fromJson(peopleInJson())) {
     var firstName = person['first_name'];
     FirstName personFirstName = new FirstName(firstNameConcept);
     personFirstName.firstName = firstName;
     firstNames.add(personFirstName);
-    
+
     var lastName = person['last_name'];
     LastName personLastName = new LastName(lastNameConcept);
     personLastName.lastName = lastName;
     lastNames.add(personLastName);
   }
-  
+
   print('Number of first names: ${firstNames.count}');
   //print(firstNames.errors.display('Errors in first names'));
-  
+
   print('Number of last names: ${lastNames.count}');
   //print(lastNames.errors.display('Errors in last names'));
 }
 
- 
+
 
 
 
