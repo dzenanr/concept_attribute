@@ -31,7 +31,7 @@ class AttributeEntries extends ModelEntries {
   Entities newEntities(String conceptCode) {
     var concept = model.concepts.findByCode(conceptCode);
     if (concept == null) {
-      throw new ConceptException("${conceptCode} concept does not exist.") ;
+      throw new ConceptError("${conceptCode} concept does not exist.") ;
     }
     if (concept.code == "City") {
       return new Cities(concept);
@@ -62,7 +62,7 @@ class AttributeEntries extends ModelEntries {
   ConceptEntity newEntity(String conceptCode) {
     var concept = model.concepts.findByCode(conceptCode);
     if (concept == null) {
-      throw new ConceptException("${conceptCode} concept does not exist.") ;
+      throw new ConceptError("${conceptCode} concept does not exist.") ;
     }
     if (concept.code == "City") {
       return new City(concept);
