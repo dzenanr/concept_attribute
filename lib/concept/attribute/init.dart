@@ -113,7 +113,7 @@ _initCategories(var entries) {
   Concept categoryConcept = categories.concept;
 
   Category politicCategory = new Category(categoryConcept);
-  politicCategory.category = "Politic";
+  politicCategory.category = "Politics";
   categories.add(politicCategory);
 
   Category EconomyCategory = new Category(categoryConcept);
@@ -191,17 +191,43 @@ _initFromPeople(var entries) {
     Cities cities = entries.cities;
     Concept cityConcept = cities.concept;
 
-    for (var city in fromJson(citiesInJson())) {
-      var cityName = city['city'];
-      City personCity = new City(cityConcept);
-      personCity.name = cityName;
-      cities.add(personCity);
-
-    }
+  for (var city in fromJson(citiesInJson())) {
+    var cityName = city['city'];
+    City personCity = new City(cityConcept);
+    personCity.name = cityName;
+    cities.add(personCity);
+  }
+  
   print('Number of Cities: ${cities.count}');
+  
+  //Text
+    Texts texts = entries.texts;
+    Concept textConcept = texts.concept;
+  
+  for (var text in fromJson(textInJson())) {
+    var textName = text['text'];
+    Text personText = new Text(textConcept);
+    personText.text = textName;
+    texts.add(personText);
+  }
+  
+  print('Number of Texts: ${texts.count}');
+  
+  //Categories
+    Categories categories = entries.categories;
+    Concept categoryConcept = categories.concept;
+    
+  for (var category in fromJson(categoryInJson())) {
+    var categoryName = category['category'];
+    Category personCategory = new Category(categoryConcept);
+    personCategory.category = categoryName;
+    categories.add(personCategory);
+  }
+  
+  print('Number of Categories: ${categories.count}');
 
-}
-
+}  
+  
 
 
 
