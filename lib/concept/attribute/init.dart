@@ -224,7 +224,7 @@ _initFromPeople(var entries) {
     categories.add(personCategory);
   }
   
-  print('Number of Categories: ${categories.count}');
+  print('Number of Categories: ${categories.count} ');
 
 }  
   
@@ -320,23 +320,6 @@ List ListTextes()
   return textes;
 }
 
-List ListCategories()
-{
-  List<Map<String, String>> fromJson(String json) {
-    List<Map<String, String>> dataList;
-    if (json != null && json.trim() != '') {
-      dataList = JSON.parse(json);
-    }
-    return dataList;
-  }
-  List<String> categories = new List<String>();
-
-  for (var category in fromJson(categoryInJson())) {
-    var categorie = category['category'];
-    categories.add(categorie.toString());
-  }
-  return categories;
-}
 
 
 
