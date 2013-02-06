@@ -23,7 +23,7 @@ testConceptAttribute(Repo repo, String domainCode, String modelCode) {
       entries.clear();
     });
     test("Empty Entries Test", () {
-      expect(entries.empty, isTrue);
+      expect(entries.isEmpty, isTrue);
     });
 
   });

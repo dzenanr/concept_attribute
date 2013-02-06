@@ -142,7 +142,7 @@ _initTexts(var entries) {
 List<Map<String, String>> fromJson(String json) {
   List<Map<String, String>> dataList;
   if (json != null && json.trim() != '') {
-    dataList = JSON.parse(json);
+    dataList = parse(json);
   }
   return dataList;
 }
@@ -159,7 +159,7 @@ _initFromPeople(var entries) {
     emails.add(personEmail);
   }
 
-  print('Number of emails: ${emails.count}');
+  print('Number of emails: ${emails.length}');
   //print(emails.errors.display('Errors in emails'));
 
   FirstNames firstNames = entries.firstNames;
@@ -180,10 +180,10 @@ _initFromPeople(var entries) {
     lastNames.add(personLastName);
   }
 
-  print('Number of first names: ${firstNames.count}');
+  print('Number of first names: ${firstNames.length}');
   //print(firstNames.errors.display('Errors in first names'));
 
-  print('Number of last names: ${lastNames.count}');
+  print('Number of last names: ${lastNames.length}');
   //print(lastNames.errors.display('Errors in last names'));
 
   ////////////////////////////////////////////////////////////////
@@ -198,7 +198,7 @@ _initFromPeople(var entries) {
     cities.add(personCity);
   }
   
-  print('Number of Cities: ${cities.count}');
+  print('Number of Cities: ${cities.length}');
   
   //Text
     Texts texts = entries.texts;
@@ -211,7 +211,7 @@ _initFromPeople(var entries) {
     texts.add(personText);
   }
   
-  print('Number of Texts: ${texts.count}');
+  print('Number of Texts: ${texts.length}');
   
   //Categories
     Categories categories = entries.categories;
@@ -224,7 +224,7 @@ _initFromPeople(var entries) {
     categories.add(personCategory);
   }
   
-  print('Number of Categories: ${categories.count} ');
+  print('Number of Categories: ${categories.length} ');
 
 }  
   
@@ -234,7 +234,7 @@ List ListEmail()
   List<Map<String, String>> fromJson(String json) {
     List<Map<String, String>> dataList;
     if (json != null && json.trim() != '') {
-      dataList = JSON.parse(json);
+      dataList = parse(json);
     }
     return dataList;
   }
@@ -253,7 +253,7 @@ List ListFristName()
   List<Map<String, String>> fromJson(String json) {
     List<Map<String, String>> dataList;
     if (json != null && json.trim() != '') {
-      dataList = JSON.parse(json);
+      dataList = parse(json);
     }
     return dataList;
   }
@@ -271,7 +271,7 @@ List ListLastName()
   List<Map<String, String>> fromJson(String json) {
     List<Map<String, String>> dataList;
     if (json != null && json.trim() != '') {
-      dataList = JSON.parse(json);
+      dataList = parse(json);
     }
     return dataList;
   }
@@ -289,7 +289,7 @@ List ListCity()
   List<Map<String, String>> fromJson(String json) {
     List<Map<String, String>> dataList;
     if (json != null && json.trim() != '') {
-      dataList = JSON.parse(json);
+      dataList = parse(json);
     }
     return dataList;
   }
@@ -307,7 +307,7 @@ List ListTextes()
   List<Map<String, String>> fromJson(String json) {
     List<Map<String, String>> dataList;
     if (json != null && json.trim() != '') {
-      dataList = JSON.parse(json);
+      dataList = parse(json);
     }
     return dataList;
   }
