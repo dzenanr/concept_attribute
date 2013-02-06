@@ -3135,205 +3135,21 @@ String textInJson() {
 
 {"text" : "how to use Accept-Language?"},
 
-{"text" : "So this currently parses states beginning with W or C followed by zip code. However, it returns all of them as one group as in Example WA 98121 CA 56679 will return Group 1 is WA 98121 and Group 2 is CA 56679.
-
-How do I fix this to retrieve in group1 WA group2 98121 group3 CA group4 56679"},
+{"text" : "So this currently parses states beginning with W or C followed by zip code. However, it returns all of them as one group as in Example WA 98121 CA 56679 will return Group 1 is WA 98121 and Group 2 is CA 56679. How do I fix this to retrieve in group1 WA group2 98121 group3 CA group4 56679"},
 
 {"text" : "I've got an String (Dinosaur) and I don't exactly know how, but how do I get the position of the char o and is it in all possible to get two positions like if my String was (Pool)"},
 
 {"text" : "I'm using the embedded ScriptEngine in Java 6/7 to run JavaScript within a Java application. Is it possible from within Javascript to pause/freeze the execution state, exit the script back to Java, let Java work for awhile, then have Java wake up the script exactly where it was paused earlier?"},
 
-{"text" : "I  have a JPanel with BoxLayout.PAGE_AXIS, but when I add two JLabels to it, the first fills the whole JPanel. PreferredSize for JPanel is height 10. Both JLabels have preferred height 5, and width is same for all three.
+{"text" : "I  have a JPanel with BoxLayout.PAGE_AXIS, but when I add two JLabels to it, the first fills the whole JPanel. PreferredSize for JPanel is height 10. Both JLabels have preferred height 5, and width is same for all three. What am I doing wrong? P.S. That's why I preffer the freaking null layout..."},
 
-What am I doing wrong?
+{"text" : "I'm using the typewriter plugin from Jason Frame's Grab Bag.However, I now find myself in a situation where I need to be able to pause and resume this typewriter at any point during its run. Ideally, I'd have .typewriter(pause) to pause it, and .typewriter(resume) to resume the animation from where it left off. I've tried setting a paused variable within the plugin, and leaving the interval running with a check for the variable each iteration -- if true, do nothing. However, due to my lack of skills in making jQuery plug-ins, each time I call the function to pause the typewriter, it just starts all over again. I suspect the paused variable gets reset. How would I go about making this plugin pausable?"},
+ 
+{"text" : "I have a problem with a vertical scrolling photo gallery, I want vertical images to resize but horizontal images are fine the way they are. Horizontal images are 900px in width and vertical images would be too tall for confortable screen viewing so I want two 440px width vertical images and a central margin of 20px to fit below one horizontal. The website is on Cargocollective so I can't use PHP, only Jquery, Javascript and CSS And I can only add on the HTML. Anyone has a solution? A way to detect the ratio of the images and then resize only if height>width Thanks"},
 
-P.S. That's why I preffer the freaking null layout..."},
+{"text" : "The problem that I'm encountering is that when I call doSomething() from anotherElemId click event(that is binded on document ready) it works as expected, but calling it recursively from elementId click doesn't work. Any ideas? Thinking is something trivial that I'm missing."},
 
-{"text" : "I'm using the typewriter plugin from Jason Frame's Grab Bag.
-
-However, I now find myself in a situation where I need to be able to pause and resume this typewriter at any point during its run.
-
-Ideally, I'd have .typewriter(pause) to pause it, and .typewriter(resume) to resume the animation from where it left off.
-
-I've tried setting a paused variable within the plugin, and leaving the interval running with a check for the variable each iteration -- if true, do nothing.
-
-However, due to my lack of skills in making jQuery plug-ins, each time I call the function to pause the typewriter, it just starts all over again. I suspect the paused variable gets reset.
-
-How would I go about making this plugin pausable?"},
-
-{"text" : "I have a problem with a vertical scrolling photo gallery, I want vertical images to resize but horizontal images are fine the way they are. Horizontal images are 900px in width and vertical images would be too tall for confortable screen viewing so I want two 440px width vertical images and a central margin of 20px to fit below one horizontal.
-
-The website is on Cargocollective so I can't use PHP, only Jquery, Javascript and CSS And I can only add on the HTML. Anyone has a solution?
-
-A way to detect the ratio of the images and then resize only if height>width
-
-Thanks"},
-
-{"text" : "The problem that I'm encountering is that when I call doSomething() from anotherElemId click event(that is binded on document ready) it works as expected, but calling it recursively from elementId click doesn't work.
-
-Any ideas? Thinking is something trivial that I'm missing."},
-
-{"text" : "I am using Moment.js and would like to convert unix timestamps to (always) display minutes ago from the current time. E.g.) 4 mins ago, 30 mins ago, 94 mins ago, ect.
-
-Right now I am using:
-
-moment.unix(d).fromNow()
-But this does not always display in minutes e.g.) an hour ago, a day ago, ect. I have tried using .asMinutes() but I believe this only words with moment.duration()."},
-
-{"text" : "I started a virtualenv session, and inside a directory dir, I have the following directory hierarchy:
-
-| venv -- the virtual environment
-| app_dir
-  main.py
-  | dir1
-  | dir2
-  | dir2
-I've installed flask for this environment, which main.py uses. When I run python main.py, it will run through flask. My question here is - does app_dir and venv have to be sibling directories? Or can I have app_dir somewhere else? If so, how does main.py recognise flask to be in venv?"},
-
-{"text" : "I am writing a bitmap file using python. My code to create the bitmap header is:
-
-pack('bblll', 66, 77, fileLength, 0, 122)
-Unless my math is wrong, (Which, it's not) this should create a string of bytes that is 14 bytes long.
-
-b = char (1 byte) l = long (4 bytes)
-
-1 + 1 + 4 + 4 + 4 = 14
-
-But, the thing is, I receive 2 extra bytes; Say I have a filelength of 142, I would receive the following (in hexidecimal):
-
-42 4D 00 00 8E 00 00 00 00 00 00 00 7A 00 00 00
-The 2 extra bits are nulls at offset 0x2 and 0x3. Where do They come from? And How do I get rid of them? It is corrupting my images."},
-
-{"text" : "I just started learning Flask (and as a result, getting into virtualenv as well). I followed a tutorial on Flask's documentation and created a small application. I installed Flask and yolk using venv and everything was working fine.
-
-I restarted my computer and when I activated virtualenv again, flask and yolk were no longer recognised. I had to reinstall them via easy_install. Does venv remove any installed packages once the computer has been restarted?
-
-What happened here? Is there anything I need to do from my side?"},
-
-{"text" : "How can I set an applications image (icon) in my canonical-quickly project? Even if I set the icon path in Glade, the UI designer, my icon doesn't show up.
-
-In the aplications bar of my desktop I only see a gear.
-
-I used the following relative path in Glade:
-
-../media/projectname.svg"},
-
-{"text" : "When i did something in Python as:
-
-ping = subprocess.Popen(ping -n 1 %s %ip, stdout=subprocess.PIPE)
-it is always to print out to screen:
-
-(subprocess.Popen object at 0x.... )
-It's a bit annoying for me. Do you know how to avoid that std output ?"},
-
-{"text" : "The default server in app demo for private_pub gem is suggested as thin.
-
-are there any other webservers around which can boost up the performance with faye.
-
-also please share about any experience of faye/priavte_pub with thin on production."},
-
-{"text" : "Hey I am creating a rails 3 engine and trying to access a model in the application that is mounting the engine.
-
-module MyEngine
-  class UsersController < ApplicationController
-
-    def index
-      @users = User.all
-    end
-If I call the following then it gives me the error:
-
-Could not find table 'my_engine_users' - Its automatically looking for the namespaced version that would exist if the model was inside the engine, but in this case its defined in the app that uses the engine.
-
-If I call ::User.all instead of User.all then everything works, it looks a bit strange though. Is this valid ruby or is there a better way to get ahold of the Object?"},
-
-{"text" : "I would have a question about models and migrations in rails.
-
-Let's take an example. I have a Member model :
-
-class Member < ActiveRecord::Base
-    attr_accessible :a, :b
-end
-And the corresponding migration :
-
-class CreateMembers < ActiveRecord::Migration
-    def change
-        create_table :members do |t|
-            t.string :a
-            t.string :b
-        end
-    end
-end
-I realize later that a Member has a Car. So, I have to create the Car model etc ... Now, I have to modify both models adding belong_to and has_one rules but also create a new migration and add car.integer :member_id
-
-I find it pretty unpractical and redundant. Is there any trick letting do this automatically ? Furthermore, unlike Symfony2 where model are totally dissociated from the database, here we need to inform a foreign_key column. Is there any way to write something like car.member :member instead of car.integer :member_id ? It is a detail, but I would appreciate.
-
-Thanks :)"},
-
-{"text" : "I'm trying to find a way to generate a unique system ID (HWID) without having to add any other gems first.
-
-In other words, I want someone who's running a brand new version of Mac/Linux to be able to generate an ID, without having to install anything else.
-
-The only ID methods I've found require additional gems to be installed, so that wont work.
-
-Any help is appreciated :)"},
-
-{"text" : "I am working on a tutorials document / short book and I was wondering if there is a way to use Ruby colour code highlight within Lyx ? I have google and tried several approaches but the best I could find was this http://www.tux-crazy.com/2011/11/tips-to-get-you-started-with-lyx-part-2.html and it just make some keywords highlighted in bold or 1 colour - hardly ideal for tutorials.
-
-Is syntax highlighting for Ruby possible in an efficient and eye candy way on lyx ?"},
-
-{"text" : "I have a domain model in which each line item is associated with a product. The product has a list of options. Each option is either required or optional. The user can include an optional option which will add it to the line item's selections list.
-
-In order to avoid redundancy, my first thought was to exclude required options from the line item's selections list. There are a lot of required options, so including them for every line item would lead to a bloated database.
-
-The problem is that the products can potentially change over time. Options that were once required could become optional, and visa-versa. And entirely new options may be added to the product. This creates a problem with my initial idea, since the meaning of line items' selection lists would depend on a product's options at the time of the order.
-
-So what should I do?
-
-If I also include required options in the line item's selection lists, then the model is simple. I'd have a snapshot of the options that were included with the product. But then I've also got a lot of bloat in the database since references to required options will be repeated for every line item. Is this something I should be worried about or will SQL Server do some kind of behind-the-scenes compression?
-
-Should I pursue my original idea of excluding required options from the line item's selection lists? Then I would need to keep some historical data regarding changes to the products. That way I could recreate the product and its options as they existed at the time of the order. Sounds possible but more complicated than the first option. I worry it would take more CPU cycles but that would be okay if its for old orders which won't be opened very often. I've never had to do this myself before, but maybe it wouldn't be so hard. If this is the approach you recommend, please provide some pointers to design patterns, etc. to help me get started."},
-
-{"text" : "I have basic many to many relation set with tables categories, locations trough categories_locations table. Example:
-
-Categories table
-
-| ID | Name       |
-| 1  | Category 1 |
-| 2  | Category 2 |
-| 3  | Category 3 |
-Locations table
-
-| ID | Name       |
-| 1  | Location 1 |
-| 2  | Location 2 |
-| 3  | Location 3 |
-Categories_Locations table
-
-| category_id | location_id |
-| 1           | 1           |
-| 2           | 2           |
-| 2           | 3           |
-| 3           | 1           |
-| 3           | 3           |
-How to get all location that belong to category 2 and at the same time also belong to category 3? In above example that would result only to location 3!
-
-Filtering with OR is simple. Just a normal left join where category_id IN (matched categories). But how to filter when I want to get only those relation that belong to category1 and at the same time also to category2 (and so on)?"},
-
-{"text" : "Having one table with users (which are registered) in mysql
-
-I simply want to assign every each of them any of the rows in different tables and different tables in other databases.
-
-I though about create for every user stand-alone table with links to this rows.
-
-For example:
-
-Table my_user // With two columns
-
-id_of_table id_of_row
-
-But I afraid is not good solution.
-
-Thanks for help in advance :)"},
+{"text" : "I am using Moment.js and would like to convert unix timestamps to (always) display minutes ago from the current time. E.g.) 4 mins ago, 30 mins ago, 94 mins ago, ect. Right now I am using: moment.unix(d).fromNow() But this does not always display in minutes e.g.) an hour ago, a day ago, ect. I have tried using .asMinutes() but I believe this only words with moment.duration()."},
 
 {"text" : "Most efficient way to make one attribute of a table into the attributes of another table?"},
 

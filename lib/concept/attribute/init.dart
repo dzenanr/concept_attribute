@@ -16,7 +16,6 @@ initConceptAttribute(var entries) {
 }
 
 _initCities(var entries) {
-
   Cities cities = entries.cities;
   Concept cityConcept = cities.concept;
 
@@ -31,11 +30,9 @@ _initCities(var entries) {
   City montrealCity = new City(cityConcept);
   montrealCity.name = 'Montréal';
   cities.add(montrealCity);
-
 }
 
 _initFirstNames(var entries) {
-
   FirstNames firstNames = entries.firstNames;
   Concept firstNameConcept = firstNames.concept;
 
@@ -96,7 +93,6 @@ _initEmails(var entries) {
   Email dzenanEmail = new Email(emailConcept);
   dzenanEmail.email = 'dzenan.ridjanovic@gmail.ca';
   emails.add(dzenanEmail);
-
 }
 
 _initAbouts(var entries) {
@@ -148,7 +144,6 @@ List<Map<String, String>> fromJson(String json) {
 }
 
 _initFromPeople(var entries) {
-
   Emails emails = entries.emails;
   Concept emailConcept = emails.concept;
 
@@ -198,11 +193,11 @@ _initFromPeople(var entries) {
     cities.add(personCity);
   }
   
-  print('Number of Cities: ${cities.length}');
+  print('Number of cities: ${cities.length}');
   
   //Text
-    Texts texts = entries.texts;
-    Concept textConcept = texts.concept;
+  Texts texts = entries.texts;
+  Concept textConcept = texts.concept;
   
   for (var text in fromJson(textInJson())) {
     var textName = text['text'];
@@ -211,11 +206,11 @@ _initFromPeople(var entries) {
     texts.add(personText);
   }
   
-  print('Number of Texts: ${texts.length}');
+  print('Number of texts: ${texts.length}');
   
   //Categories
-    Categories categories = entries.categories;
-    Concept categoryConcept = categories.concept;
+  Categories categories = entries.categories;
+  Concept categoryConcept = categories.concept;
     
   for (var category in fromJson(categoryInJson())) {
     var categoryName = category['category'];
@@ -224,13 +219,11 @@ _initFromPeople(var entries) {
     categories.add(personCategory);
   }
   
-  print('Number of Categories: ${categories.length} ');
+  print('Number of categories: ${categories.length} ');
 
 }  
   
-List ListEmail()
-{
-
+List ListEmail() {
   List<Map<String, String>> fromJson(String json) {
     List<Map<String, String>> dataList;
     if (json != null && json.trim() != '') {
@@ -245,11 +238,9 @@ List ListEmail()
     emails.add(emailAddress.toString());
   }
   return emails;
-
 }
 
-List ListFristName()
-{
+List ListFristName() {
   List<Map<String, String>> fromJson(String json) {
     List<Map<String, String>> dataList;
     if (json != null && json.trim() != '') {
@@ -264,10 +255,9 @@ List ListFristName()
     firstnames.add(firstname.toString());
   }
   return firstnames;
-  }
+}
 
-List ListLastName()
-{
+List ListLastName() {
   List<Map<String, String>> fromJson(String json) {
     List<Map<String, String>> dataList;
     if (json != null && json.trim() != '') {
@@ -282,10 +272,9 @@ List ListLastName()
     lastnames.add(lasrname.toString());
   }
   return lastnames;
-  }
+}
 
-List ListCity()
-{
+List ListCity() {
   List<Map<String, String>> fromJson(String json) {
     List<Map<String, String>> dataList;
     if (json != null && json.trim() != '') {
@@ -302,8 +291,7 @@ List ListCity()
   return cities;
 }
 
-List ListTextes()
-{
+List ListTextes() {
   List<Map<String, String>> fromJson(String json) {
     List<Map<String, String>> dataList;
     if (json != null && json.trim() != '') {
