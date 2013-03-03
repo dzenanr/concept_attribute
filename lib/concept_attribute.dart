@@ -44,6 +44,12 @@ import "package:dartling/dartling.dart";
 part "concept/attribute/json/data.dart";
 part "concept/attribute/json/model.dart";
 
+part "concept/attribute/json/categories.dart";
+part "concept/attribute/json/cities.dart";
+part "concept/attribute/json/emails.dart";
+part "concept/attribute/json/people.dart";
+part "concept/attribute/json/texts.dart";
+
 part "concept/attribute/init.dart";
 
 part "concept/attribute/cities.dart";
@@ -53,7 +59,6 @@ part "concept/attribute/emails.dart";
 part "concept/attribute/abouts.dart";
 part "concept/attribute/categories.dart";
 part "concept/attribute/descriptions.dart";
-part "concept/attribute/people.dart";
 part "concept/attribute/texts.dart";
 
 part "gen/concept/attribute/entries.dart";
