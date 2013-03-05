@@ -13,7 +13,7 @@ String categoriesInJson() {
 {"category" : "Git", "subcategory" : ["Linux", "Github", "Bash", "Repo", "SSH-keys"]},
 {"category" : "CMS", "subcategory" : ["Wordpress", "Joomla", "Drupal", "Blogs", "Themes"]},
 {"category" : "Google", "subcategory" : ["google-api", "google-analytics", "google-app-engine", "google-maps", "android"]}
-] 
+]
   ''';
   return json;
 }
