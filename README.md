@@ -1,4 +1,4 @@
-# ![Alt dartling] (https://raw.github.com/dzenanr/dartling/master/resources/dartling.png) **concept_attribute** 
+# ![Alt dartling] (https://raw.github.com/dzenanr/dartling/master/resources/dartling.png) **concept attribute** 
 
 **Categories**: dartling, model, test data.
 
