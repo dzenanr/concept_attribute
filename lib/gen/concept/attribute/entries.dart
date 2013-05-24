@@ -9,27 +9,27 @@ class AttributeEntries extends ModelEntries {
   Map<String, Entities> newEntries() {
     var entries = new Map<String, Entities>();
     var concept;
-    concept = model.concepts.findByCode("City");
+    concept = model.concepts.singleWhereCode("City");
     entries["City"] = new Cities(concept);
-    concept = model.concepts.findByCode("FirstName");
+    concept = model.concepts.singleWhereCode("FirstName");
     entries["FirstName"] = new FirstNames(concept);
-    concept = model.concepts.findByCode("LastName");
+    concept = model.concepts.singleWhereCode("LastName");
     entries["LastName"] = new LastNames(concept);
-    concept = model.concepts.findByCode("Email");
+    concept = model.concepts.singleWhereCode("Email");
     entries["Email"] = new Emails(concept);
-    concept = model.concepts.findByCode("About");
+    concept = model.concepts.singleWhereCode("About");
     entries["About"] = new Abouts(concept);
-    concept = model.concepts.findByCode("Category");
+    concept = model.concepts.singleWhereCode("Category");
     entries["Category"] = new Categories(concept);
-    concept = model.concepts.findByCode("Description");
+    concept = model.concepts.singleWhereCode("Description");
     entries["Description"] = new Descriptions(concept);
-    concept = model.concepts.findByCode("Text");
+    concept = model.concepts.singleWhereCode("Text");
     entries["Text"] = new Texts(concept);
     return entries;
   }
 
   Entities newEntities(String conceptCode) {
-    var concept = model.concepts.findByCode(conceptCode);
+    var concept = model.concepts.singleWhereCode(conceptCode);
     if (concept == null) {
       throw new ConceptError("${conceptCode} concept does not exist.") ;
     }
@@ -60,7 +60,7 @@ class AttributeEntries extends ModelEntries {
   }
 
   ConceptEntity newEntity(String conceptCode) {
-    var concept = model.concepts.findByCode(conceptCode);
+    var concept = model.concepts.singleWhereCode(conceptCode);
     if (concept == null) {
       throw new ConceptError("${conceptCode} concept does not exist.") ;
     }
