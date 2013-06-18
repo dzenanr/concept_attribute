@@ -18,7 +18,7 @@ genCode() {
   // change Skeleton to YourModelName
   // change "Skeleton" to "YourModelName"
   Model conceptAttributeModel =
-      fromMagicBoxes(conceptAttributeModelJson, conceptDomain, "Attribute");
+      fromJsonToModel(conceptAttributeModelJson, conceptDomain, "Attribute");
 
   repo.domains.add(conceptDomain);
 

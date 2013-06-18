@@ -9,7 +9,7 @@ class ConceptModels extends DomainModels {
   }
 
   AttributeEntries fromJsonToAttributeEntries() {
-    return new AttributeEntries(fromMagicBoxes(
+    return new AttributeEntries(fromJsonToModel(
       conceptAttributeModelJson,
       domain,
       ConceptRepo.conceptAttributeModelCode));

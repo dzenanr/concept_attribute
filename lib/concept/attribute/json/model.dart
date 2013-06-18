@@ -30,6 +30,8 @@ var conceptAttributeModelJson = r'''
                "name":"name",
                "category":"identifier",
                "type":"String",
+               "essential":true,
+               "sensitive":false,
                "init":""
             }
          ]
@@ -47,6 +49,8 @@ var conceptAttributeModelJson = r'''
                "name":"firstName",
                "category":"identifier",
                "type":"String",
+               "essential":true,
+               "sensitive":false,
                "init":""
             }
          ]
@@ -64,6 +68,8 @@ var conceptAttributeModelJson = r'''
                "name":"lastName",
                "category":"identifier",
                "type":"String",
+               "essential":true,
+               "sensitive":false,
                "init":""
             }
          ]
@@ -81,6 +87,8 @@ var conceptAttributeModelJson = r'''
                "name":"email",
                "category":"identifier",
                "type":"Email",
+               "essential":true,
+               "sensitive":false,
                "init":""
             }
          ]
@@ -98,6 +106,8 @@ var conceptAttributeModelJson = r'''
                "name":"about",
                "category":"identifier",
                "type":"String",
+               "essential":true,
+               "sensitive":false,
                "init":""
             }
          ]
@@ -115,6 +125,8 @@ var conceptAttributeModelJson = r'''
                "name":"category",
                "category":"identifier",
                "type":"String",
+               "essential":true,
+               "sensitive":false,
                "init":""
             }
          ]
@@ -132,6 +144,8 @@ var conceptAttributeModelJson = r'''
                "name":"description",
                "category":"identifier",
                "type":"String",
+               "essential":true,
+               "sensitive":false,
                "init":""
             }
          ]
@@ -149,6 +163,8 @@ var conceptAttributeModelJson = r'''
                "name":"text",
                "category":"identifier",
                "type":"String",
+               "essential":true,
+               "sensitive":false,
                "init":""
             }
          ]
