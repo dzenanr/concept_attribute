@@ -35,8 +35,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 library concept_attribute;
 
-import "dart:json";
-import "dart:math";
+import "dart:convert";
 
 import "package:dartling/dartling.dart";
 

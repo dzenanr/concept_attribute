@@ -112,7 +112,7 @@ _initFromTextsInJson(entries) {
 List<Map<String, String>> fromJson(String json) {
   List<Map<String, String>> dataList;
   if (json != null && json.trim() != '') {
-    dataList = parse(json);
+    dataList = JSON.decode(json);
   }
   return dataList;
 }

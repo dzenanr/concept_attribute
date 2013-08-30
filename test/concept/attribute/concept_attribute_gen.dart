@@ -1,27 +1,15 @@
 // test/concept/attribute/concept_attribute_gen.dart
 
-import 'dart:json';
-import 'dart:math';
-
 import 'package:dartling/dartling.dart';
 
 import 'package:concept_attribute/concept_attribute.dart';
 
-
 genCode() {
   var repo = new Repo();
-
-  // change "Dartling" to "YourDomainName"
   var conceptDomain = new Domain("Concept");
-
-  // change dartling to yourDomainName
-  // change Skeleton to YourModelName
-  // change "Skeleton" to "YourModelName"
   Model conceptAttributeModel =
       fromJsonToModel(conceptAttributeModelJson, conceptDomain, "Attribute");
-
   repo.domains.add(conceptDomain);
-
   repo.gen("concept_attribute");
 }
 
@@ -37,7 +25,7 @@ initConceptData(ConceptRepo conceptRepo) {
 }
 
 void main() {
-  //genCode();
+  genCode();
 
   var conceptRepo = new ConceptRepo();
   initConceptData(conceptRepo);
