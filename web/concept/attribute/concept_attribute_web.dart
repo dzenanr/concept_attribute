@@ -14,8 +14,8 @@ initConceptData(ConceptRepo conceptRepo) {
    var conceptAttributeEntries =
        conceptModels.getModelEntries(ConceptRepo.conceptAttributeModelCode);
    initConceptAttribute(conceptAttributeEntries);
-   conceptAttributeEntries.display();
-   conceptAttributeEntries.displayJson();
+   //conceptAttributeEntries.display();
+   //conceptAttributeEntries.displayJson();
 }
 
 showConceptData(ConceptRepo conceptRepo) {
