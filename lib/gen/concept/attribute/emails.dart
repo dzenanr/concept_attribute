@@ -4,9 +4,12 @@ part of concept_attribute;
 
 abstract class EmailGen extends ConceptEntity<Email> {
 
-  EmailGen(Concept concept) : super.of(concept);
+  EmailGen(Concept concept) {
+    this.concept = concept;
+  }
 
-  EmailGen.withId(Concept concept, String email) : super.of(concept) {
+  EmailGen.withId(Concept concept, String email) {
+    this.concept = concept;
     setAttribute("email", email);
   }
 
@@ -23,7 +26,9 @@ abstract class EmailGen extends ConceptEntity<Email> {
 
 abstract class EmailsGen extends Entities<Email> {
 
-  EmailsGen(Concept concept) : super.of(concept);
+  EmailsGen(Concept concept) {
+    this.concept = concept;
+  }
 
   Emails newEntities() => new Emails(concept);
 

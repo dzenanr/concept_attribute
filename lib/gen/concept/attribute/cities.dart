@@ -4,9 +4,12 @@ part of concept_attribute;
 
 abstract class CityGen extends ConceptEntity<City> {
 
-  CityGen(Concept concept) : super.of(concept);
+  CityGen(Concept concept) {
+    this.concept = concept;
+  }
 
-  CityGen.withId(Concept concept, String name) : super.of(concept) {
+  CityGen.withId(Concept concept, String name) {
+    this.concept = concept;
     setAttribute("name", name);
   }
 
@@ -23,7 +26,9 @@ abstract class CityGen extends ConceptEntity<City> {
 
 abstract class CitiesGen extends Entities<City> {
 
-  CitiesGen(Concept concept) : super.of(concept);
+  CitiesGen(Concept concept) {
+    this.concept = concept;
+  }
 
   Cities newEntities() => new Cities(concept);
 

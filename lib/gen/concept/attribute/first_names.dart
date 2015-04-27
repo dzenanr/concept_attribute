@@ -4,7 +4,9 @@ part of concept_attribute;
 
 abstract class FirstNameGen extends ConceptEntity<FirstName> {
 
-  FirstNameGen(Concept concept) : super.of(concept);
+  FirstNameGen(Concept concept) {
+    this.concept = concept;
+  }
 
   String get firstName => getAttribute("firstName");
   set firstName(String a) => setAttribute("firstName", a);
@@ -15,7 +17,9 @@ abstract class FirstNameGen extends ConceptEntity<FirstName> {
 
 abstract class FirstNamesGen extends Entities<FirstName> {
 
-  FirstNamesGen(Concept concept) : super.of(concept);
+  FirstNamesGen(Concept concept) {
+    this.concept = concept;
+  }
 
   FirstNames newEntities() => new FirstNames(concept);
 

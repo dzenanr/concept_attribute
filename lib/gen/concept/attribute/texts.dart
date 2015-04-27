@@ -4,9 +4,12 @@ part of concept_attribute;
 
 abstract class TextGen extends ConceptEntity<Text> {
 
-  TextGen(Concept concept) : super.of(concept);
+  TextGen(Concept concept) {
+    this.concept = concept;
+  }
 
-  TextGen.withId(Concept concept, String text) : super.of(concept) {
+  TextGen.withId(Concept concept, String text) {
+    this.concept = concept;
     setAttribute("text", text);
   }
 
@@ -23,7 +26,9 @@ abstract class TextGen extends ConceptEntity<Text> {
 
 abstract class TextsGen extends Entities<Text> {
 
-  TextsGen(Concept concept) : super.of(concept);
+  TextsGen(Concept concept) {
+    this.concept = concept;
+  }
 
   Texts newEntities() => new Texts(concept);
 

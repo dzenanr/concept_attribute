@@ -4,9 +4,12 @@ part of concept_attribute;
 
 abstract class AboutGen extends ConceptEntity<About> {
 
-  AboutGen(Concept concept) : super.of(concept);
+  AboutGen(Concept concept) {
+    this.concept = concept;
+  }
 
-  AboutGen.withId(Concept concept, String about) : super.of(concept) {
+  AboutGen.withId(Concept concept, String about) {
+    this.concept = concept;
     setAttribute("about", about);
   }
 
@@ -23,7 +26,9 @@ abstract class AboutGen extends ConceptEntity<About> {
 
 abstract class AboutsGen extends Entities<About> {
 
-  AboutsGen(Concept concept) : super.of(concept);
+  AboutsGen(Concept concept) {
+    this.concept = concept;
+  }
 
   Abouts newEntities() => new Abouts(concept);
 

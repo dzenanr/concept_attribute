@@ -4,9 +4,12 @@ part of concept_attribute;
 
 abstract class LastNameGen extends ConceptEntity<LastName> {
 
-  LastNameGen(Concept concept) : super.of(concept);
+  LastNameGen(Concept concept) {
+    this.concept = concept;
+  }
 
-  LastNameGen.withId(Concept concept, String lastName) : super.of(concept) {
+  LastNameGen.withId(Concept concept, String lastName) {
+    this.concept = concept;
     setAttribute("lastName", lastName);
   }
 
@@ -23,7 +26,9 @@ abstract class LastNameGen extends ConceptEntity<LastName> {
 
 abstract class LastNamesGen extends Entities<LastName> {
 
-  LastNamesGen(Concept concept) : super.of(concept);
+  LastNamesGen(Concept concept) {
+    this.concept = concept;
+  }
 
   LastNames newEntities() => new LastNames(concept);
 

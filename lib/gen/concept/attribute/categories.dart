@@ -4,9 +4,12 @@ part of concept_attribute;
 
 abstract class CategoryGen extends ConceptEntity<Category> {
 
-  CategoryGen(Concept concept) : super.of(concept);
+  CategoryGen(Concept concept) {
+    this.concept = concept;
+  }
 
-  CategoryGen.withId(Concept concept, String category) : super.of(concept) {
+  CategoryGen.withId(Concept concept, String category) {
+    this.concept = concept;
     setAttribute("category", category);
   }
 
@@ -23,7 +26,9 @@ abstract class CategoryGen extends ConceptEntity<Category> {
 
 abstract class CategoriesGen extends Entities<Category> {
 
-  CategoriesGen(Concept concept) : super.of(concept);
+  CategoriesGen(Concept concept) {
+    this.concept = concept;
+  }
 
   Categories newEntities() => new Categories(concept);
 

@@ -4,9 +4,12 @@ part of concept_attribute;
 
 abstract class DescriptionGen extends ConceptEntity<Description> {
 
-  DescriptionGen(Concept concept) : super.of(concept);
+  DescriptionGen(Concept concept) {
+    this.concept = concept;
+  }
 
-  DescriptionGen.withId(Concept concept, String description) : super.of(concept) {
+  DescriptionGen.withId(Concept concept, String description) {
+    this.concept = concept;
     setAttribute("description", description);
   }
 
@@ -23,7 +26,9 @@ abstract class DescriptionGen extends ConceptEntity<Description> {
 
 abstract class DescriptionsGen extends Entities<Description> {
 
-  DescriptionsGen(Concept concept) : super.of(concept);
+  DescriptionsGen(Concept concept) {
+    this.concept = concept;
+  }
 
   Descriptions newEntities() => new Descriptions(concept);
 
