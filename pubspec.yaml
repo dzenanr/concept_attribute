@@ -1,5 +1,5 @@
 name: concept_attribute
-version: 0.1.2
+version: 2.0.1
 description: A model with one attribute concepts for test data generation. dartling is a domain model framework for web applications.
 author: Dzenan Ridjanovic <dzenanr@gmail.com>
 homepage: http://ondart.me/
@@ -8,7 +8,5 @@ environment:
   sdk: '>=1.9.3 <2.0.0'
 dependencies:
   browser: any
-  dartling:
-    git: git://github.com/dzenanr/dartling.git
-  dartling_default_app:
-    git: git://github.com/dzenanr/dartling_default_app.git
+  dartling: any
+  dartling_default_app: any
